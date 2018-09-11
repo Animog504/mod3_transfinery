@@ -15,4 +15,8 @@ class TranslationEvent < ApplicationRecord
     # @@all << self
   end
 
+  def all()
+    @@all
+  end
+
 end

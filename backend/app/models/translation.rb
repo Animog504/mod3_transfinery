@@ -7,9 +7,6 @@ class Translation < ApplicationRecord
     @startingLanguage = sl
     @resultLanguage = rl
     @tbtranslated = tbt
-    @finalTranslation = ""
-    @iterations = []
-    # of back-and-forths: iterations.length
     TranslationEvent.iterations << self
   end
 
