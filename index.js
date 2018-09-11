@@ -9,6 +9,8 @@ translate('Ik spreek Engels', {to: 'en'}).then(res => {
     console.error(err);
 });// NODE STUFF */
 
+//https://translation.googleapis.com/language/translate/v2
+
 document.addEventListener("DOMContentLoaded", () => {
 // since we aren't populating anything per se,
 // we will simply be adding EventListeners to
@@ -41,7 +43,7 @@ function initialize(){
     if(primary && secondary)
     {
       if(inputString){
-
+        translation(primary,secondary,inputString)
       }else{
         alert("Not all fields are populated\nPlease fill in the form")
       }//string is empty
@@ -49,5 +51,26 @@ function initialize(){
       alert("Languages not selected.\nPlease select a primary and secondary language")
     }//select dropdowns(s) are still at default
 
+  })//eventListener for our form
+}//initialize()
+
+function translation(primary,secondary,inputString){
+  //call a function that does the recursion
+  let temp = null
+  fetch(GOOGLE_API_URL, {
+    methods: 'POST'
+    //something else here!
   })
-}//initialize
+  .then(res => res.json())
+  .then(result => function(result){temp = result
+
+//WORKING HERE
+
+
+
+
+
+  })//.then(function)
+
+
+}//beginTranslation()
