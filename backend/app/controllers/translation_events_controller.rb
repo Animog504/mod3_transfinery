@@ -1,0 +1,2 @@
+class TranslationEventsController < ApplicationController
+end
