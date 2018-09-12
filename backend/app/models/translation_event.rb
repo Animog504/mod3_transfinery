@@ -1,18 +1,17 @@
 class TranslationEvent < ApplicationRecord
-  has_many: Translation 
+  has_many :translations
 
   # attr_reader :
   # attr_writer :
   @@all = []
 
   def initialize(sl, rl, tbt)
-    @startingLanguage = sl
-    @resultLanguage = rl
-    @tbtranslated = tbt
-    @finalTranslation = ""
-    @iterations = []
-    # of back-and-forths: iterations.length
-    # @@all << self
+    @from = sl 
+    @to = rl
+    @origin = tbt
+    @iterations = [] # of back-and-forths: iterations.length
+    @text = ""
+    @@all << self
   end
 
   def all()
