@@ -1,4 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
+# This file should contain all the record creation needed ResultingLanguage seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 
 
@@ -18,28 +18,35 @@ tHello_iterations= []
 # 2. howareyou-annyoung
 # 3. annyoung-hello
 
-tHello_iterations << Translation.new('en','ko','hello','annyounghaseyo') #hello-annyounghaseyo-translations[0]
+event = TranslationEvent.create(
+  StartingLanguage: 'en', 
+  ResultingLanguage: 'ko', 
+  Original: 'hello', 
+  Result: 'annyounghaseyo'
+)
 
-# tHello_iterations << Translation.create(from: 'ko', to: 'en', origin: tHello_iterations[0].text, text: 'how are you') #annyounghaseyo-howareyou-translations[1]
+tHello_iterations << Translation.create(StartingLanguage: 'en', ResultingLanguage: 'ko', Original: 'hello',Result: 'annyounghaseyo', translation_event: event) #hello-annyounghaseyo-translations[0]
 
-# tHello_iterations << Translation.create(from: 'en', to: 'ko', origin: tHello_iterations[1].text, text: 'annyoung') #howareyou-annyoung-translations[2]
+# tHello_iterations << Translation.create(StartingLanguage: 'ko', ResultingLanguage: 'en', Original: tHello_iterations[0].Result, Result: 'how are you') #annyounghaseyo-howareyou-translations[1]
 
-# tHello_iterations << Translation.create(from: 'ko', to: 'en', origin: tHello_iterations[2].text, text: 'hello') #annyoung-hello-translations[3]
+# tHello_iterations << Translation.create(StartingLanguage: 'en', ResultingLanguage: 'ko', Original: tHello_iterations[1].Result, Result: 'annyoung') #howareyou-annyoung-translations[2]
+
+# tHello_iterations << Translation.create(StartingLanguage: 'ko', ResultingLanguage: 'en', Original: tHello_iterations[2].Result, Result: 'hello') #annyoung-hello-translations[3]
 
 
-# # 4. konnichiwa-hello
-# # 5. hello-konnichiwa
-# # 6 .konnichiwa-hello
+# 0. konnichiwa-hello
+# 1. hello-konnichiwa
+# 2 .konnichiwa-hello
 
-# tKonnichiwa_iterations = []
-# tKonnichiwa_iterations<< Translation.create(from: 'jp', to: 'en', origin: 'hello', text: 'annyounghaseyo') #hello-annyounghaseyo-tKonnichiwa_iterations[0]
+tKonnichiwa_iterations = []
 
-# tKonnichiwa_iterations<<  Translation.create(from: 'en', to: 'jp', origin: tKonnichiwa_iterations[0].text, text: 'how are you') #annyounghaseyo-howareyou-tKonnichiwa_iterations[1]
+tKonnichiwa_iterations<< Translation.create(StartingLanguage: 'jp', ResultingLanguage: 'en', Original: 'hello', Result: 'annyounghaseyo') #hello-annyounghaseyo-tKonnichiwa_iterations[0]
 
-# tKonnichiwa_iterations<< Translation.create(from: 'jp', to: 'en', origin: tKonnichiwa_iterations[1].text, text: 'annyoung') #howareyou-annyoung-tKonnichiwa_iterations[2]
+tKonnichiwa_iterations<<  Translation.create(StartingLanguage: 'en', ResultingLanguage: 'jp', Original: tKonnichiwa_iterations[0].Result, Result: 'how are you') #annyounghaseyo-howareyou-tKonnichiwa_iterations[1]
+
+tKonnichiwa_iterations<< Translation.create(StartingLanguage: 'jp', ResultingLanguage: 'en', Original: tKonnichiwa_iterations[1].Result, Result: 'annyoung') #howareyou-annyoung-tKonnichiwa_iterations[2]
 
 # # <----------------Translation Event ------------------->
 
-# tHello = TranslationEvent.create(from: tHello_iterations.first.from, to: tHello_iterations.first.to, origin: tHello_iterations.first.origin, iterations: tHello_iterations, text: tHello_iterations.last.text)
+# tHello = TranslationEvent.create(StartingLanguage: tHello_iterations.first.StartingLanguage, ResultingLanguage: tHello_iterations.first.ResultingLanguage, Original: tHello_iterations.first.Original, iterations: tHello_iterations, Result: tHello_iterations.last.Result)
 
-# tKonnichiwa = TranslationEvent.create(from: tKonnichiwa_iterations.first.from, to: tKonnichiwa_iterations.first.to, origin: tKonnichiwa_iterations.first.origin, iterations: tKonnichiwa_iterations, text: tKonnichiwa_iterations.last.text)

@@ -28,3 +28,8 @@ Things you may want to cover:
 - API key: Transfinery-67f8c4b8c272.json
 
 - Response: 'https://translation.googleapis.com/$discovery/rest?version=v2'
+
+* Use absolute path
+
+export GOOGLE_APPLICATION_CREDENTIALS='/Users/flatironschool/Downloads/Transf
+inery-67f8c4b8c272.json'

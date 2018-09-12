@@ -5,14 +5,14 @@ class TranslationEvent < ApplicationRecord
   # attr_writer :
   @@all = []
 
-  def initialize(sl, rl, tbt)
-    @from = sl 
-    @to = rl
-    @origin = tbt
-    @iterations = [] # of back-and-forths: iterations.length
-    @text = ""
-    @@all << self
-  end
+  # def initialize()
+  #   # @from = translations.first.from
+  #   # @to = translations.first.to
+  #   # @origin = translations.first.origin
+  #   @iterations = [] #translations
+  #   # @text = translations.last.text
+  #   @@all << self
+  # end
 
   def all()
     @@all
