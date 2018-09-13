@@ -4547,3 +4547,1088 @@ Processing by TranslationsController#plsWork as */*
 Completed 200 OK in 497ms (Views: 0.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/transfinery/translate?from=en&to=ko&origin=I%20crave%20some%20thai%20food%20right%20nowLets%20go%20lift%20right%20now" for 127.0.0.1 at 2018-09-13 14:55:44 -0500
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"I crave some thai food right nowLets go lift right now"}
+Completed 200 OK in 604ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EB%82%98%EB%8A%94%20%EC%A7%80%EA%B8%88%20%ED%83%80%EC%9D%B4%20%EC%9D%8C%EC%8B%9D%EC%9D%84%20%EA%B0%88%EB%A7%9D%ED%95%9C%EB%8B%A4.%20%EC%A7%80%EA%B8%88%20%EB%8B%B9%EC%9E%A5%20%EA%B0%80%EC%95%BC%20%ED%95%B4." for 127.0.0.1 at 2018-09-13 14:55:46 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"나는 지금 타이 음식을 갈망한다. 지금 당장 가야 해."}
+Completed 200 OK in 473ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=I%20now%20yearn%20for%20Thai%20food.%20I%20have%20to%20go%20right%20now." for 127.0.0.1 at 2018-09-13 14:55:46 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"I now yearn for Thai food. I have to go right now."}
+Completed 200 OK in 1377ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EB%82%98%EB%8A%94%20%EC%9D%B4%EC%A0%9C%20%ED%83%9C%EA%B5%AD%20%EC%9D%8C%EC%8B%9D%EC%97%90%20%EA%B0%88%EB%A7%9D%ED%95%9C%EB%8B%A4.%20%EB%82%98%EB%8A%94%20%EC%A7%80%EA%B8%88%20%EA%B0%80%EC%95%BC%20%ED%95%B4." for 127.0.0.1 at 2018-09-13 14:55:48 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"나는 이제 태국 음식에 갈망한다. 나는 지금 가야 해."}
+Completed 200 OK in 435ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=I%20now%20crave%20Thai%20food.%20I%20have%20to%20go%20now." for 127.0.0.1 at 2018-09-13 14:55:48 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"I now crave Thai food. I have to go now."}
+Completed 200 OK in 770ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EB%82%98%EB%8A%94%20%EC%9D%B4%EC%A0%9C%20%ED%83%9C%EA%B5%AD%20%EC%9D%8C%EC%8B%9D%EC%9D%84%20%EA%B0%88%EB%A7%9D%ED%95%9C%EB%8B%A4.%20%EC%9D%B4%EC%A0%9C%20%EA%B0%80%EC%95%BC%20%ED%95%B4." for 127.0.0.1 at 2018-09-13 14:55:49 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"나는 이제 태국 음식을 갈망한다. 이제 가야 해."}
+Completed 200 OK in 402ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=dem%20fucking%20niggers%20dont%20know%20shit%20%27bout%20my%20country" for 127.0.0.1 at 2018-09-13 14:58:28 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"dem fucking niggers dont know shit 'bout my country"}
+Completed 200 OK in 629ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=dem%20%EA%B9%9C%EB%91%A5%20%EC%95%84%20%EB%B9%8C%EC%96%B4%20%EB%A8%B9%EC%9D%84%20%EB%B9%8C%EC%96%B4%20%EB%A8%B9%EC%9D%84%20&" for 127.0.0.1 at 2018-09-13 14:58:28 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"dem 깜둥 아 빌어 먹을 빌어 먹을 "}
+Completed 200 OK in 495ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=dam%20nigga%20fucking%20fucking%20damn" for 127.0.0.1 at 2018-09-13 14:58:29 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"dam nigga fucking fucking damn"}
+Completed 200 OK in 708ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%A0%A0%EC%9E%A5,%20%EC%A0%A0%EC%9E%A5." for 127.0.0.1 at 2018-09-13 14:58:30 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"젠장, 젠장."}
+Completed 200 OK in 393ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Damn%20it,%20damn%20it." for 127.0.0.1 at 2018-09-13 14:58:30 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Damn it, damn it."}
+Completed 200 OK in 371ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=we%20keep%20it%20kosher%20here%20at%20flatiron" for 127.0.0.1 at 2018-09-13 14:59:12 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"we keep it kosher here at flatiron"}
+Completed 200 OK in 511ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%9A%B0%EB%A6%AC%EB%8A%94%20%EC%95%84%EC%9D%B4%EB%A1%A0%EC%97%90%EC%84%9C%20%EC%97%AC%EA%B8%B0%EC%97%90%20%EC%A0%95%EC%84%B1%EA%BB%8F%20%EA%B0%84%EC%A7%81%ED%95%98%EA%B3%A0%EC%9E%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 14:59:12 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"우리는 아이론에서 여기에 정성껏 간직하고있다."}
+Completed 200 OK in 464ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=We%20are%20deliberately%20kept%20here%20in%20Iron." for 127.0.0.1 at 2018-09-13 14:59:13 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"We are deliberately kept here in Iron."}
+Completed 200 OK in 454ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%9A%B0%EB%A6%AC%EB%8A%94%20%EC%9D%98%EB%8F%84%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EC%97%AC%EA%B8%B0%EC%97%90%20%EC%B2%A0%20%EC%86%8D%EC%97%90%20%EB%B3%B4%EA%B4%80%EB%90%98%EC%96%B4%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 14:59:13 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"우리는 의도적으로 여기에 철 속에 보관되어 있습니다."}
+Completed 200 OK in 777ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=We%20are%20deliberately%20kept%20here%20in%20the%20iron." for 127.0.0.1 at 2018-09-13 14:59:14 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"We are deliberately kept here in the iron."}
+Completed 200 OK in 475ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%9A%B0%EB%A6%AC%EB%8A%94%20%EC%9D%98%EB%8F%84%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EC%97%AC%EA%B8%B0%20%EC%B2%A0%20%EC%86%8D%EC%97%90%20%EB%B3%B4%EA%B4%80%EB%90%98%EC%96%B4%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 14:59:15 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"우리는 의도적으로 여기 철 속에 보관되어 있습니다."}
+Completed 200 OK in 480ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Scott%20is%20Awesome" for 127.0.0.1 at 2018-09-13 15:03:43 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Scott is Awesome"}
+Completed 200 OK in 689ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%8A%A4%EC%BD%A7%EC%9D%80%20%EB%8C%80%EB%8B%A8%ED%95%B4." for 127.0.0.1 at 2018-09-13 15:03:44 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"스콧은 대단해."}
+Completed 200 OK in 429ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Scott%20is%20great." for 127.0.0.1 at 2018-09-13 15:03:44 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Scott is great."}
+Completed 200 OK in 665ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%8A%A4%EC%BA%87%EC%9D%80%20%EC%9C%84%EB%8C%80%ED%95%98%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:03:45 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"스캇은 위대하다."}
+Completed 200 OK in 1571ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=JavaScript%20is%20going%20off%20the%20rails" for 127.0.0.1 at 2018-09-13 15:04:08 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"JavaScript is going off the rails"}
+Completed 200 OK in 971ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94%20%EB%A0%88%EC%9D%BC%EC%97%90%EC%84%9C%20%EB%B2%97%EC%96%B4%EB%82%98%EA%B3%A0%EC%9E%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:04:09 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"자바 스크립트는 레일에서 벗어나고있다."}
+Completed 200 OK in 505ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=JavaScript%20is%20getting%20out%20of%20the%20rails." for 127.0.0.1 at 2018-09-13 15:04:09 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"JavaScript is getting out of the rails."}
+Completed 200 OK in 468ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EA%B0%80%20%EB%B9%A0%EC%A0%B8%20%EB%82%98%EC%98%B5%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:04:10 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"자바 스크립트가 빠져 나옵니다."}
+Completed 200 OK in 365ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=The%20JavaScript%20will%20exit." for 127.0.0.1 at 2018-09-13 15:04:10 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"The JavaScript will exit."}
+Completed 200 OK in 676ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%9E%90%EB%B0%94%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EA%B0%80%20%EC%A2%85%EB%A3%8C%EB%90%A9%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:04:11 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"자바 스크립트가 종료됩니다."}
+Completed 200 OK in 397ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=JavaScript%20will%20be%20terminated." for 127.0.0.1 at 2018-09-13 15:04:11 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"JavaScript will be terminated."}
+Completed 200 OK in 365ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=You%27re%20Welcome" for 127.0.0.1 at 2018-09-13 15:04:51 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"You're Welcome"}
+Completed 200 OK in 220ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%B2%9C%EB%A7%8C%EC%97%90%EC%9A%94" for 127.0.0.1 at 2018-09-13 15:04:51 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"천만에요"}
+Completed 200 OK in 254ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=You&" for 127.0.0.1 at 2018-09-13 15:04:51 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"You"}
+Completed 200 OK in 244ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=you%27re%20welcome" for 127.0.0.1 at 2018-09-13 15:06:46 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"you're welcome"}
+Completed 200 OK in 221ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%B2%9C%EB%A7%8C%EC%97%90%EC%9A%94" for 127.0.0.1 at 2018-09-13 15:06:47 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"천만에요"}
+Completed 200 OK in 331ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=You&" for 127.0.0.1 at 2018-09-13 15:06:47 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"You"}
+Completed 200 OK in 214ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EB%8B%B9%EC%8B%A0" for 127.0.0.1 at 2018-09-13 15:06:47 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"당신"}
+Completed 200 OK in 212ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=you" for 127.0.0.1 at 2018-09-13 15:06:47 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"you"}
+Completed 200 OK in 182ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=you%20are%20welcome" for 127.0.0.1 at 2018-09-13 15:07:04 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"you are welcome"}
+Completed 200 OK in 263ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%B2%9C%EB%A7%8C%EC%97%90%EC%9A%94" for 127.0.0.1 at 2018-09-13 15:07:04 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"천만에요"}
+Completed 200 OK in 223ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=You&" for 127.0.0.1 at 2018-09-13 15:07:04 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"You"}
+Completed 200 OK in 226ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EB%8B%B9%EC%8B%A0" for 127.0.0.1 at 2018-09-13 15:07:04 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"당신"}
+Completed 200 OK in 208ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=you" for 127.0.0.1 at 2018-09-13 15:07:05 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"you"}
+Completed 200 OK in 207ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=You%20are%20welcome" for 127.0.0.1 at 2018-09-13 15:10:39 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"You are welcome"}
+Completed 200 OK in 280ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%B2%9C%EB%A7%8C%EC%97%90%EC%9A%94" for 127.0.0.1 at 2018-09-13 15:10:39 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"천만에요"}
+Completed 200 OK in 220ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=You%26%2339%3Bre%20welcome" for 127.0.0.1 at 2018-09-13 15:10:39 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"You&#39;re welcome"}
+Completed 200 OK in 214ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%27s%20Okay%3F" for 127.0.0.1 at 2018-09-13 15:12:32 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It's Okay?"}
+Completed 200 OK in 280ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%27s%20Okay%3F" for 127.0.0.1 at 2018-09-13 15:12:32 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It's Okay?"}
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%95%84%3F" for 127.0.0.1 at 2018-09-13 15:12:32 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮아?"}
+Completed 200 OK in 310ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 314ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%95%84%3F" for 127.0.0.1 at 2018-09-13 15:12:33 -0500
+Started GET "/transfinery/translate?from=en&to=ko&origin=OK%3F" for 127.0.0.1 at 2018-09-13 15:12:33 -0500
+Processing by TranslationsController#plsWork as */*
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"OK?"}
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮아?"}
+Completed 200 OK in 312ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 354ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=OK%3F" for 127.0.0.1 at 2018-09-13 15:12:33 -0500
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%8A%B9%EC%9D%B8%3F" for 127.0.0.1 at 2018-09-13 15:12:33 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"승인?"}
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"OK?"}
+Completed 200 OK in 229ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 282ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%8A%B9%EC%9D%B8%3F" for 127.0.0.1 at 2018-09-13 15:12:34 -0500
+Started GET "/transfinery/translate?from=en&to=ko&origin=Acknowledgment%3F" for 127.0.0.1 at 2018-09-13 15:12:34 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Acknowledgment?"}
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"승인?"}
+Completed 200 OK in 243ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 258ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%27s%20okay" for 127.0.0.1 at 2018-09-13 15:12:45 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It's okay"}
+Completed 200 OK in 217ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%95%84" for 127.0.0.1 at 2018-09-13 15:12:45 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮아"}
+Completed 200 OK in 228ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=OK" for 127.0.0.1 at 2018-09-13 15:12:45 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"OK"}
+Completed 200 OK in 204ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%8A%B9%EC%9D%B8" for 127.0.0.1 at 2018-09-13 15:12:46 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"승인"}
+Completed 200 OK in 210ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Acknowledgment" for 127.0.0.1 at 2018-09-13 15:12:46 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Acknowledgment"}
+Completed 200 OK in 271ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%20will%20be%20okay" for 127.0.0.1 at 2018-09-13 15:12:55 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It will be okay"}
+Completed 200 OK in 295ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%20%EA%B2%83%EC%9D%B4%EB%8B%A4" for 127.0.0.1 at 2018-09-13 15:12:56 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을 것이다"}
+Completed 200 OK in 480ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%20will%20be%20fine" for 127.0.0.1 at 2018-09-13 15:12:56 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It will be fine"}
+Completed 200 OK in 233ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%20%EA%B2%81%EB%8B%88%EB%8B%A4" for 127.0.0.1 at 2018-09-13 15:12:57 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을 겁니다"}
+Completed 200 OK in 793ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%26%2339%3Bll%20be%20fine." for 127.0.0.1 at 2018-09-13 15:12:57 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It&#39;ll be fine."}
+Completed 200 OK in 216ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%EA%B1%B0%EC%95%BC." for 127.0.0.1 at 2018-09-13 15:12:58 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을거야."}
+Completed 200 OK in 233ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%20will%20be%20fine." for 127.0.0.1 at 2018-09-13 15:12:58 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It will be fine."}
+Completed 200 OK in 194ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%20%EA%B2%81%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:12:58 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을 겁니다."}
+Completed 200 OK in 359ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%26%2339%3Bll%20be%20okay." for 127.0.0.1 at 2018-09-13 15:12:58 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It&#39;ll be okay."}
+Completed 200 OK in 369ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%EA%B1%B0%EC%95%BC." for 127.0.0.1 at 2018-09-13 15:12:59 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을거야."}
+Completed 200 OK in 358ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%20will%20be%20fine." for 127.0.0.1 at 2018-09-13 15:12:59 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It will be fine."}
+Completed 200 OK in 227ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%20%EA%B2%81%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:12:59 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을 겁니다."}
+Completed 200 OK in 230ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%26%2339%3Bll%20be%20okay." for 127.0.0.1 at 2018-09-13 15:13:00 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It&#39;ll be okay."}
+Completed 200 OK in 224ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%EA%B1%B0%EC%95%BC." for 127.0.0.1 at 2018-09-13 15:13:00 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을거야."}
+Completed 200 OK in 226ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%20will%20be%20fine." for 127.0.0.1 at 2018-09-13 15:13:00 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It will be fine."}
+Completed 200 OK in 209ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%20%EA%B2%81%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:13:00 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을 겁니다."}
+Completed 200 OK in 214ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%26%2339%3Bll%20be%20okay." for 127.0.0.1 at 2018-09-13 15:13:01 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It&#39;ll be okay."}
+Completed 200 OK in 224ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%EA%B1%B0%EC%95%BC." for 127.0.0.1 at 2018-09-13 15:13:01 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을거야."}
+Completed 200 OK in 240ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=It%20will%20be%20fine." for 127.0.0.1 at 2018-09-13 15:13:01 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"It will be fine."}
+Completed 200 OK in 229ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B4%9C%EC%B0%AE%EC%9D%84%20%EA%B2%81%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:13:01 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"괜찮을 겁니다."}
+Completed 200 OK in 215ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Paradox" for 127.0.0.1 at 2018-09-13 15:13:58 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Paradox"}
+Completed 200 OK in 201ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%97%AD%EC%84%A4" for 127.0.0.1 at 2018-09-13 15:13:59 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"역설"}
+Completed 200 OK in 498ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=paradox" for 127.0.0.1 at 2018-09-13 15:13:59 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"paradox"}
+Completed 200 OK in 216ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Grace%20gracefully%20graced%20Grace" for 127.0.0.1 at 2018-09-13 15:14:36 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Grace gracefully graced Grace"}
+Completed 200 OK in 488ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%EB%8A%94%20%EC%9A%B0%EC%95%84%ED%95%98%EA%B2%8C%20%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%EB%A5%BC%20%EC%9A%B0%EC%95%84%ED%95%98%EA%B2%8C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:14:36 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"그레이스는 우아하게 그레이스를 우아하게했습니다."}
+Completed 200 OK in 545ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Grace%20elegantly%20grace%20grace." for 127.0.0.1 at 2018-09-13 15:14:37 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Grace elegantly grace grace."}
+Completed 200 OK in 460ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%20%EC%9A%B0%EC%95%84%ED%95%98%EA%B2%8C%20%EC%9D%80%ED%98%9C%20%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4." for 127.0.0.1 at 2018-09-13 15:14:37 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"그레이스 우아하게 은혜 그레이스."}
+Completed 200 OK in 528ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Grace%20Grace%20Grace%20Grace." for 127.0.0.1 at 2018-09-13 15:14:38 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Grace Grace Grace Grace."}
+Completed 200 OK in 1158ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%20%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%20%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%20%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4." for 127.0.0.1 at 2018-09-13 15:14:39 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"그레이스 그레이스 그레이스 그레이스."}
+Completed 200 OK in 421ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=let%20i%20%3D%205%20%2F%200%0A" for 127.0.0.1 at 2018-09-13 15:16:20 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"let i = 5 / 0\n"}
+Completed 200 OK in 465ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=i%20%3D%205%20%2F%200%EC%9D%B4%EB%9D%BC%ED%95%98%EC%9E%90." for 127.0.0.1 at 2018-09-13 15:16:20 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"i = 5 / 0이라하자."}
+Completed 200 OK in 395ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Let%20i%20%3D%205%2F0." for 127.0.0.1 at 2018-09-13 15:16:21 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Let i = 5/0."}
+Completed 200 OK in 493ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=i%20%3D%205%2F0%EB%A1%9C%ED%95%A9%EC%8B%9C%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:16:21 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"i = 5/0로합시다."}
+Completed 200 OK in 489ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Let%26%2339%3Bs%20say%20i%20%3D%205%2F0." for 127.0.0.1 at 2018-09-13 15:16:22 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Let&#39;s say i = 5/0."}
+Completed 200 OK in 483ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=i%20%3D%205%2F0%EB%9D%BC%EA%B3%A0%20%EA%B0%80%EC%A0%95%20%ED%95%B4%20%EB%B4%85%EC%8B%9C%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:16:22 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"i = 5/0라고 가정 해 봅시다."}
+Completed 200 OK in 411ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=let%20i%20%3D%205%20%2F%200" for 127.0.0.1 at 2018-09-13 15:18:19 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"let i = 5 / 0"}
+Completed 200 OK in 267ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=let%20i%20%3D%205%20%2F%200" for 127.0.0.1 at 2018-09-13 15:18:19 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"let i = 5 / 0"}
+Completed 200 OK in 282ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=let%20i%20%3D%205%20%2F%200" for 127.0.0.1 at 2018-09-13 15:18:20 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"let i = 5 / 0"}
+Completed 200 OK in 236ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=You%27re%20Welcome" for 127.0.0.1 at 2018-09-13 15:18:39 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"You're Welcome"}
+Completed 200 OK in 202ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=you%27re%20welcome" for 127.0.0.1 at 2018-09-13 15:18:39 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"you're welcome"}
+Completed 200 OK in 274ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=you%27re%20welcome" for 127.0.0.1 at 2018-09-13 15:18:40 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"you're welcome"}
+Completed 200 OK in 263ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=you%27re%20welcome" for 127.0.0.1 at 2018-09-13 15:18:40 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"you're welcome"}
+Completed 200 OK in 252ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=You%20are%20Welcome" for 127.0.0.1 at 2018-09-13 15:18:44 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"You are Welcome"}
+Completed 200 OK in 231ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=you%20are%20welcome" for 127.0.0.1 at 2018-09-13 15:18:45 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"you are welcome"}
+Completed 200 OK in 268ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=you%20are%20welcome" for 127.0.0.1 at 2018-09-13 15:18:45 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"you are welcome"}
+Completed 200 OK in 214ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=en&origin=you%20are%20welcome" for 127.0.0.1 at 2018-09-13 15:18:45 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"en", "origin"=>"you are welcome"}
+Completed 200 OK in 176ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=You%20are%20Welcome" for 127.0.0.1 at 2018-09-13 15:18:52 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"You are Welcome"}
+Completed 200 OK in 224ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%B2%9C%EB%A7%8C%EC%97%90%EC%9A%94" for 127.0.0.1 at 2018-09-13 15:18:52 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"천만에요"}
+Completed 200 OK in 231ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=You%26%2339%3Bre%20welcome" for 127.0.0.1 at 2018-09-13 15:18:53 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"You&#39;re welcome"}
+Completed 200 OK in 216ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=zh&origin=You%20are%20Welcome" for 127.0.0.1 at 2018-09-13 15:18:58 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"zh", "origin"=>"You are Welcome"}
+Completed 200 OK in 226ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=zh&to=en&origin=%E4%B8%8D%E7%94%A8%E8%B0%A2" for 127.0.0.1 at 2018-09-13 15:18:58 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"zh", "to"=>"en", "origin"=>"不用谢"}
+Completed 200 OK in 223ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=zh&origin=you%20are%20welcome" for 127.0.0.1 at 2018-09-13 15:18:59 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"zh", "origin"=>"you are welcome"}
+Completed 200 OK in 233ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=fa&origin=You%20are%20Welcome" for 127.0.0.1 at 2018-09-13 15:19:12 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"fa", "origin"=>"You are Welcome"}
+Completed 200 OK in 224ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=fa&to=en&origin=%D8%AE%D9%88%D8%A7%D9%87%D8%B4%20%D9%85%DB%8C%DA%A9%D9%86%D9%85" for 127.0.0.1 at 2018-09-13 15:19:12 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"fa", "to"=>"en", "origin"=>"خواهش میکنم"}
+Completed 200 OK in 228ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=fa&origin=you%26%2339%3Bre%20welcome" for 127.0.0.1 at 2018-09-13 15:19:12 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"fa", "origin"=>"you&#39;re welcome"}
+Completed 200 OK in 225ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=my%20mom%20told%20me%20to%20stop%20shit%20posting%20on%20the%20internet%20because%20i%20might%20hurt%20someone%27s%20feelings.%0A" for 127.0.0.1 at 2018-09-13 15:23:37 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"my mom told me to stop shit posting on the internet because i might hurt someone's feelings.\n"}
+Completed 200 OK in 694ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%9A%B0%EB%A6%AC%20%EC%97%84%EB%A7%88%EA%B0%80%20%EB%8B%A4%EB%A5%B8%20%EC%82%AC%EB%9E%8C%EC%9D%98%20%EA%B0%90%EC%A0%95%EC%9D%84%20%EC%83%81%ED%95%98%EA%B2%8C%20%ED%95%A0%20%EC%88%98%20%EC%9E%88%EA%B8%B0%20%EB%95%8C%EB%AC%B8%EC%97%90%20%EC%9D%B8%ED%84%B0%EB%84%B7%20%EA%B2%8C%EC%8B%9C%EB%A5%BC%20%EC%A4%91%EB%8B%A8%ED%95%98%EB%9D%BC%EA%B3%A0%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:23:38 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"우리 엄마가 다른 사람의 감정을 상하게 할 수 있기 때문에 인터넷 게시를 중단하라고했습니다."}
+Completed 200 OK in 602ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=I%20told%20my%20mom%20to%20stop%20posting%20to%20the%20internet%20because%20it%20could%20hurt%20other%20people%26%2339%3Bs%20feelings." for 127.0.0.1 at 2018-09-13 15:23:38 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"I told my mom to stop posting to the internet because it could hurt other people&#39;s feelings."}
+Completed 200 OK in 620ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EB%82%98%EB%8A%94%20%EC%97%84%EB%A7%88%EC%97%90%EA%B2%8C%20%EB%8B%A4%EB%A5%B8%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%98%20%EA%B0%90%EC%A0%95%EC%9D%84%20%EC%83%81%ED%95%98%EA%B2%8C%20%ED%95%A0%20%EC%88%98%20%EC%9E%88%EA%B8%B0%20%EB%95%8C%EB%AC%B8%EC%97%90%20%EC%9D%B8%ED%84%B0%EB%84%B7%EC%97%90%20%EA%B2%8C%EC%8B%9C%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%84%20%EC%A4%91%EB%8B%A8%ED%95%98%EB%9D%BC%EA%B3%A0%20%EB%A7%90%ED%96%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:23:39 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"나는 엄마에게 다른 사람들의 감정을 상하게 할 수 있기 때문에 인터넷에 게시하는 것을 중단하라고 말했다."}
+Completed 200 OK in 642ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=I%20told%20my%20mom%20to%20stop%20posting%20on%20the%20internet%20because%20it%20could%20offend%20other%20people%26%2339%3Bs%20feelings." for 127.0.0.1 at 2018-09-13 15:23:40 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"I told my mom to stop posting on the internet because it could offend other people&#39;s feelings."}
+Completed 200 OK in 596ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EB%82%98%EB%8A%94%20%EB%8B%A4%EB%A5%B8%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%98%20%EA%B0%90%EC%A0%95%EC%9D%84%20%EC%83%81%ED%95%98%EA%B2%8C%20%ED%95%A0%20%EC%88%98%20%EC%9E%88%EA%B8%B0%20%EB%95%8C%EB%AC%B8%EC%97%90%20%EC%9D%B8%ED%84%B0%EB%84%B7%EC%97%90%20%EA%B2%8C%EC%8B%9C%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%84%20%EC%A4%91%EB%8B%A8%ED%95%98%EB%9D%BC%EA%B3%A0%20%EC%97%84%EB%A7%88%EC%97%90%EA%B2%8C%20%EB%A7%90%ED%96%88%EB%8B%A4." for 127.0.0.1 at 2018-09-13 15:23:40 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"나는 다른 사람들의 감정을 상하게 할 수 있기 때문에 인터넷에 게시하는 것을 중단하라고 엄마에게 말했다."}
+Completed 200 OK in 598ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=fuck" for 127.0.0.1 at 2018-09-13 15:25:40 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"fuck"}
+Completed 200 OK in 277ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=th&to=en&origin=%E0%B9%80%E0%B8%9E%E0%B8%A8%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C" for 127.0.0.1 at 2018-09-13 15:25:41 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"th", "to"=>"en", "origin"=>"เพศสัมพันธ์"}
+Completed 200 OK in 221ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=Fuck" for 127.0.0.1 at 2018-09-13 15:25:41 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"Fuck"}
+Completed 200 OK in 233ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=Jeannie" for 127.0.0.1 at 2018-09-13 15:26:00 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"Jeannie"}
+Completed 200 OK in 243ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=th&to=en&origin=jeannie" for 127.0.0.1 at 2018-09-13 15:26:01 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"th", "to"=>"en", "origin"=>"jeannie"}
+Completed 200 OK in 225ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=jeannie" for 127.0.0.1 at 2018-09-13 15:26:01 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"jeannie"}
+Completed 200 OK in 287ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=th&to=en&origin=jeannie" for 127.0.0.1 at 2018-09-13 15:26:01 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"th", "to"=>"en", "origin"=>"jeannie"}
+Completed 200 OK in 234ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Jeannie" for 127.0.0.1 at 2018-09-13 15:26:12 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Jeannie"}
+Completed 200 OK in 1552ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%A7%80%EB%8B%88" for 127.0.0.1 at 2018-09-13 15:26:13 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"지니"}
+Completed 200 OK in 215ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Genie" for 127.0.0.1 at 2018-09-13 15:26:14 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Genie"}
+Completed 200 OK in 236ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%9A%94%EC%A0%95" for 127.0.0.1 at 2018-09-13 15:26:14 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"요정"}
+Completed 200 OK in 254ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=fairy" for 127.0.0.1 at 2018-09-13 15:26:14 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"fairy"}
+Completed 200 OK in 218ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=ji%20ni" for 127.0.0.1 at 2018-09-13 15:26:47 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"ji ni"}
+Completed 200 OK in 1649ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=th&to=en&origin=ji%20ni" for 127.0.0.1 at 2018-09-13 15:26:49 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"th", "to"=>"en", "origin"=>"ji ni"}
+Completed 200 OK in 342ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=Ji%20ni" for 127.0.0.1 at 2018-09-13 15:26:49 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"Ji ni"}
+Completed 200 OK in 446ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=ji-ni" for 127.0.0.1 at 2018-09-13 15:26:54 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"ji-ni"}
+Completed 200 OK in 574ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=th&to=en&origin=ji-%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B5" for 127.0.0.1 at 2018-09-13 15:26:55 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"th", "to"=>"en", "origin"=>"ji-พรรณี"}
+Completed 200 OK in 821ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=Ji-ni" for 127.0.0.1 at 2018-09-13 15:26:56 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"Ji-ni"}
+Completed 200 OK in 457ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=th&to=en&origin=ji-%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B5" for 127.0.0.1 at 2018-09-13 15:26:56 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"th", "to"=>"en", "origin"=>"ji-พรรณี"}
+Completed 200 OK in 245ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=egg" for 127.0.0.1 at 2018-09-13 15:27:19 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"egg"}
+Completed 200 OK in 221ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=th&to=en&origin=%E0%B9%84%E0%B8%82%E0%B9%88" for 127.0.0.1 at 2018-09-13 15:27:19 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"th", "to"=>"en", "origin"=>"ไข่"}
+Completed 200 OK in 215ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=egg" for 127.0.0.1 at 2018-09-13 15:27:20 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"egg"}
+Completed 200 OK in 213ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=chicken" for 127.0.0.1 at 2018-09-13 15:27:35 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"chicken"}
+Completed 200 OK in 247ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=th&to=en&origin=%E0%B9%84%E0%B8%81%E0%B9%88" for 127.0.0.1 at 2018-09-13 15:27:35 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"th", "to"=>"en", "origin"=>"ไก่"}
+Completed 200 OK in 232ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=chicken" for 127.0.0.1 at 2018-09-13 15:27:35 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"chicken"}
+Completed 200 OK in 222ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=Bangkok" for 127.0.0.1 at 2018-09-13 15:28:46 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"Bangkok"}
+Completed 200 OK in 250ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=th&to=en&origin=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3" for 127.0.0.1 at 2018-09-13 15:28:46 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"th", "to"=>"en", "origin"=>"กรุงเทพมหานคร"}
+Completed 200 OK in 323ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=th&origin=Bangkok" for 127.0.0.1 at 2018-09-13 15:28:46 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"th", "origin"=>"Bangkok"}
+Completed 200 OK in 252ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=iw&to=ko&origin=i%20eat%20subway%20every%20day" for 127.0.0.1 at 2018-09-13 15:41:47 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"iw", "to"=>"ko", "origin"=>"i eat subway every day"}
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=ko&to=iw&origin=undefined" for 127.0.0.1 at 2018-09-13 15:41:48 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"iw", "origin"=>"undefined"}
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=iw&to=ko&origin=undefined" for 127.0.0.1 at 2018-09-13 15:41:48 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"iw", "to"=>"ko", "origin"=>"undefined"}
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=i%20eat%20subway%20every%20day" for 127.0.0.1 at 2018-09-13 15:42:18 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"i eat subway every day"}
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=i%20eat%20subway%20every%20day" for 127.0.0.1 at 2018-09-13 15:42:24 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"i eat subway every day"}
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=i%20eat%20subway%20every%20day" for 127.0.0.1 at 2018-09-13 15:42:26 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"i eat subway every day"}
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=hello" for 127.0.0.1 at 2018-09-13 15:43:11 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"hello"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=hello" for 127.0.0.1 at 2018-09-13 15:44:09 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"hello"}
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=ass" for 127.0.0.1 at 2018-09-13 15:47:28 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"ass"}
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=ass" for 127.0.0.1 at 2018-09-13 15:48:09 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"ass"}
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=ass" for 127.0.0.1 at 2018-09-13 15:50:15 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"ass"}
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=hello" for 127.0.0.1 at 2018-09-13 15:50:23 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"hello"}
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=hello" for 127.0.0.1 at 2018-09-13 15:53:06 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"hello"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=hi%20there" for 127.0.0.1 at 2018-09-13 15:55:32 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"hi there"}
+Completed 200 OK in 410ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%95%88%EB%85%95" for 127.0.0.1 at 2018-09-13 15:55:33 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"안녕"}
+Completed 200 OK in 297ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Hello" for 127.0.0.1 at 2018-09-13 15:55:33 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Hello"}
+Completed 200 OK in 225ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=ko&to=en&origin=%EC%97%AC%EB%B3%B4%EC%84%B8%EC%9A%94" for 127.0.0.1 at 2018-09-13 15:55:33 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"ko", "to"=>"en", "origin"=>"여보세요"}
+Completed 200 OK in 371ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+

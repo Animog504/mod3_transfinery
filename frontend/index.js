@@ -1,5 +1,5 @@
 
-
+const TRANSFINERY_URL = "http://localhost:3000/transfinery/translate"
 //====================== TRANSLATION-EVENT Variables
 let primaryLanguage = ""
 let secondaryLanguage = ""
@@ -41,6 +41,7 @@ function initialize(){
           originalInput = inputString
           keepLooping = true
           displayArea.innerHTML = ""
+          iterationArray = []
           translationParty(primary,secondary,inputString)
         }else{
           alert("Not all fields are populated\nPlease fill in the form")
@@ -66,6 +67,9 @@ function updateContentPanel(temp, iterationCount){
 }//updateContentPanel()
 
 function getStuff(from, to, origin){
+  from = encodeURIComponent(from)
+  to = encodeURIComponent(to)
+  origin = encodeURIComponent(origin)
   return  fetch(`http://localhost:3000/transfinery/translate?from=${from}&to=${to}&origin=${origin}`)//fetch
   .then(res => res.json())
 }//getStuff()
