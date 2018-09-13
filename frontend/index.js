@@ -10,6 +10,8 @@ translate('Ik spreek Engels', {to: 'en'}).then(res => {
 });// NODE STUFF */
 
 //https://translation.googleapis.com/language/translate/v2
+let iterationArray = [];
+let iterationCount = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
 // since we aren't populating anything per se,
@@ -34,6 +36,9 @@ function initialize(){
 
   form.addEventListener("submit",function(e){
     e.preventDefault()
+    //reset our global variables for a new cycle
+    iterationCount = 0;
+    iterationArray = [];
 
     const primary = primaryLanguage.value
     const secondary = secondaryLanguage.value
@@ -54,7 +59,7 @@ function initialize(){
   })//eventListener for our form
 }//initialize()
 
-function translation(primary,secondary,inputString){
+function translation(primary,secondary,inputString,iterationCount = 0){
   //call a function that does the recursion
   let temp = null
   fetch(GOOGLE_API_URL, {
@@ -62,15 +67,46 @@ function translation(primary,secondary,inputString){
     //something else here!
   })
   .then(res => res.json())
-  .then(result => function(result){temp = result
+  .then(result => function(result){
+    temp = result.value
 
-//WORKING HERE
+    //depending on the value of result we might have to
+    //access the string a different way. HALP TIM!!!
+    //we also cannot perform comparisons until the 3rd
+    //iteration since it's every other translation we're
+    //trying to compare i.e. g[0] === g[2], g[1] === g[3], etc.
 
+    //the following assumes to get the string it's result.value
+    iterationArray.push(result.value)
 
+    if(iterationCount >= 3)
+    {
+      //do comparison logic
+      if(iterationArray[iterationCount] === iterationArray[iterationCount-2])
+      {
+        //the strings of a certain language are the same and equilibrium is
+        //attained. call a function that breaks this dreaded loop. also create
+        //a new translation_event to store in our database
 
+      }
+    }
+    updateContentPanel(temp,iterationCount)
 
-
-  })//.then(function)
+    translation(secondary,primary,temp,iterationCount)
+  })//.then(function w/ result)
 
 
 }//beginTranslation()
+
+function updateContentPanel(temp, iterationCount){
+  const content = document.getElementById('content-panel')
+  const template = `
+    <br><li data-iteration-count="${++iterationCount}">${temp}</li>
+  `
+  content.innerHTML += template
+}//updateContentPanel()
+
+function getStuff(from, to, origin){
+  return fetch(`http://localhost:3000/transfinery/translate?from=${from}&to=${to}&origin=${origin}`)//fetch
+  .then(res => res.json())
+}//getStuff()

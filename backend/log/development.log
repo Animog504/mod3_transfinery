@@ -439,3 +439,219 @@ Migrating to CreateTranslationEvents (20180911001955)
   [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:28
   [1m[36mTranslation Load (0.5ms)[0m  [1m[34mSELECT  "translations".* FROM "translations" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:28:56 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "transfinery_development" does not exist
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (628.0ms)[0m  [1m[35mCREATE DATABASE "transfinery_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (574.8ms)[0m  [1m[35mCREATE DATABASE "transfinery_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (35.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (25.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7717128560041916085)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateTranslations (20180911001843)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (37.6ms)[0m  [1m[35mCREATE TABLE "translations" ("id" bigserial primary key, "from" character varying, "to" character varying, "origin" character varying, "text" character varying, "translation_event_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180911001843_create_translations.rb:3
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE  INDEX  "index_translations_on_translation_event_id" ON "translations"  ("translation_event_id")[0m
+  ↳ db/migrate/20180911001843_create_translations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180911001843"]]
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTranslationEvents (20180911001955)
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (22.1ms)[0m  [1m[35mCREATE TABLE "translation_events" ("id" bigserial primary key, "from" character varying, "to" character varying, "origin" character varying, "text" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180911001955_create_translation_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180911001955"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-12 22:34:56.075168"], ["updated_at", "2018-09-12 22:34:56.075168"]]
+  ↳ bin/rails:9
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7717128560041916085)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:35:43 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:36:15 -0500
+Processing by TranslationsController#plsWork as */*
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Could not load the default credentials. Browse to
+https://developers.google.com/accounts/docs/application-default-credentials
+for more information
+):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:40:14 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Unable to read the credential file specified by GOOGLE_APPLICATION_CREDENTIALS: file /Users/flatironschool/Downloads/Transf
+inery-67f8c4b8c272.json does not exist):
+  
+app/controllers/translations_controller.rb:9:in `plsWork'
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:45:02 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:54:47 -0500
+Completed 500 Internal Server Error in 585355ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `plsWork'
+app/controllers/translations_controller.rb:13:in `plsWork'
+Processing by TranslationsController#plsWork as */*
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:55:22 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 0.0ms)
+
+
+  
+Google::Cloud::InvalidArgumentError (Google::Cloud::InvalidArgumentError):
+  
+app/controllers/translations_controller.rb:13:in `plsWork'
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:55:49 -0500
+Processing by TranslationsController#plsWork as */*
+Completed 200 OK in 233ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:57:23 -0500
+Processing by TranslationsController#plsWork as */*
+Completed 200 OK in 252ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate" for 127.0.0.1 at 2018-09-12 17:59:31 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TranslationsController#plsWork as */*
+Completed 200 OK in 230ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=ko&origin=Joshua%20is%20the%20best" for 127.0.0.1 at 2018-09-12 18:10:19 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Joshua is the best"}
+Completed 500 Internal Server Error in 93901ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `plsWork'
+app/controllers/translations_controller.rb:11:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=ko&origin=Joshua%20is%20the%20best" for 127.0.0.1 at 2018-09-12 18:12:13 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"ko", "origin"=>"Joshua is the best"}
+Completed 200 OK in 1829ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=jp&origin=Joshua%20is%20the%20best" for 127.0.0.1 at 2018-09-12 18:37:11 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"jp", "origin"=>"Joshua is the best"}
+Completed 500 Internal Server Error in 405ms (ActiveRecord: 0.0ms)
+
+
+  
+Google::Cloud::InvalidArgumentError (Google::Cloud::InvalidArgumentError):
+  
+app/controllers/translations_controller.rb:12:in `plsWork'
+Started GET "/transfinery/translate?from=en&to=es&origin=Joshua%20is%20the%20best" for 127.0.0.1 at 2018-09-12 18:37:22 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"es", "origin"=>"Joshua is the best"}
+Completed 200 OK in 488ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=en&to=zh&origin=Joshua%20is%20the%20best" for 127.0.0.1 at 2018-09-12 18:38:43 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"en", "to"=>"zh", "origin"=>"Joshua is the best"}
+Completed 200 OK in 553ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/transfinery/translate?from=zh&to=en&origin=%E7%BA%A6%E4%B9%A6%E4%BA%9A%E6%98%AF%E6%9C%80%E5%A5%BD%E7%9A%84" for 127.0.0.1 at 2018-09-12 18:39:30 -0500
+Processing by TranslationsController#plsWork as */*
+  Parameters: {"from"=>"zh", "to"=>"en", "origin"=>"约书亚是最好的"}
+Completed 200 OK in 568ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
