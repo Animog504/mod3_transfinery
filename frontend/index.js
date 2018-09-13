@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initialize();
 })//DOMContentLoaded
-
+  const displayArea = document.getElementById('content-panel')
 function initialize(){
   //grab everything
   const form = document.getElementById('transfinery-form')
@@ -39,6 +39,8 @@ function initialize(){
           primaryLanguage = primary
           secondaryLanguage = secondary
           originalInput = inputString
+          keepLooping = true
+          displayArea.innerHTML = ""
           translationParty(primary,secondary,inputString)
         }else{
           alert("Not all fields are populated\nPlease fill in the form")
@@ -81,26 +83,34 @@ async function translationParty(from, to, origin){
   //get the string data and shovel into global array
   //repeat getStuff with from/to switched and the translation
   // while(keepLooping === true){
-
+  if(keepLooping){
     var iterationData = await getStuff(from,to,origin).catch((err) => { console.log(err); });
-
     let currentIteration = iterationData.text
-    if(iterationArray.length%2 === 0 && from === 'en'){
+    iterationArray.push(currentIteration)
+    if(iterationArray.length%2 !== 0 && from === 'en'){
       currentIteration = currentIteration.toLowerCase(); // only for eng
     }
-    console.log("Resumed execution. either i messed up or await isn't working")
+
     if(iterationArray.length >= 3){
-      if(currentIteration === iterationArray[iterationArray.length-3])
+      console.log(`my iterationArray is ${iterationArray.length}`)
+      console.log(`im comparing: ${currentIteration} vs ${iterationArray[iterationArray.length-3]}`)
+      if(currentIteration === iterationArray[iterationArray.length-3] || currentIteration === originalInput || iterationArray.length >= 20)
       {
         keepLooping = false
+
+        // break out of our recursion
       }
     }
-    iterationArray.push(currentIteration)
+
     listElement = createListElement(currentIteration, iterationArray.length)
-    const displayArea = document.getElementById('content-panel')
+
     displayArea.innerHTML += listElement
 
-    debugger
+    translationParty(to,from,currentIteration)
+  }//ifLooping
+  // IF YOU'RE HERE YOU'RE DONE WITH THE LOOPZ
+  // YOU CAN NOW GRAB ALL THAT GLOBAL VARIABLE GOODNESS AND SHOVE IT INTO RUBY.
+  keepLooping=true
 
   // }//keepLooping condition
 
@@ -114,7 +124,7 @@ async function translationParty(from, to, origin){
 
 function createListElement(str,listID){
   return `
-    <li data-list-id="${listID}"><h3>${str}</h3></li><br>
+    <li data-list-id="${listID}"><h3>${str}</h3></li>
   `
 }//createListElement()
 
