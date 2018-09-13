@@ -9,4 +9,8 @@ class Translation < ApplicationRecord
   #   #TranslationEvent.iterations << self
   # end
 
+  def translate(original, rl)
+    original
+  end
+
 end

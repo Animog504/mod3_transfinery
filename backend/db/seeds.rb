@@ -48,5 +48,5 @@ tKonnichiwa_iterations<< Translation.create(StartingLanguage: 'jp', ResultingLan
 
 # # <----------------Translation Event ------------------->
 
-# tHello = TranslationEvent.create(StartingLanguage: tHello_iterations.first.StartingLanguage, ResultingLanguage: tHello_iterations.first.ResultingLanguage, Original: tHello_iterations.first.Original, iterations: tHello_iterations, Result: tHello_iterations.last.Result)
+tHello = TranslationEvent.create(StartingLanguage: tHello_iterations.first.StartingLanguage, ResultingLanguage: tHello_iterations.first.ResultingLanguage, Original: tHello_iterations.first.Original, iterations: tHello_iterations, Result: tHello_iterations.last.Result)
 
