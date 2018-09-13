@@ -1,34 +1,22 @@
-/*const translate = require('google-translate-api');
 
-translate('Ik spreek Engels', {to: 'en'}).then(res => {
-    console.log(res.text);
-    //=> I speak English
-    console.log(res.from.language.iso);
-    //=> nl
-}).catch(err => {
-    console.error(err);
-});// NODE STUFF */
 
-//https://translation.googleapis.com/language/translate/v2
-let iterationArray = [];
-let iterationCount = 0;
-
+//====================== TRANSLATION-EVENT Variables
+let primaryLanguage = ""
+let secondaryLanguage = ""
+let originalInput = ""
+let iterationArray = []
+let keepLooping = true //for logic later on
+//====================== T
 document.addEventListener("DOMContentLoaded", () => {
-// since we aren't populating anything per se,
-// we will simply be adding EventListeners to
-// our elements
 
-//grab elements from page... maybe on a global scope
-//----------------------------------------------------
   initialize();
-
 })//DOMContentLoaded
 
 function initialize(){
   //grab everything
   const form = document.getElementById('transfinery-form')
-  const primaryLanguage = document.getElementById('primary')
-  const secondaryLanguage = document.getElementById('secondary')
+  const primaryLang = document.getElementById('primary')
+  const secondaryLang = document.getElementById('secondary')
   const textArea = document.getElementById('text-box')
   //so when we click the submit button we want to
   //send the string in the text-box through the api
@@ -37,21 +25,27 @@ function initialize(){
   form.addEventListener("submit",function(e){
     e.preventDefault()
     //reset our global variables for a new cycle
-    iterationCount = 0;
-    iterationArray = [];
 
-    const primary = primaryLanguage.value
-    const secondary = secondaryLanguage.value
+
+    const primary = primaryLang.children[0].value
+    const secondary = secondaryLang.children[0].value
     const inputString = textArea.value
 
     // we need to make sure these fields exist!
-    if(primary && secondary)
-    {
-      if(inputString){
-        translation(primary,secondary,inputString)
+    console.log(`${primary},${secondary},${inputString}`)
+    if(primary !== "default" && secondary !== "default"){
+      if(primary !== secondary){
+        if(!!inputString){
+          primaryLanguage = primary
+          secondaryLanguage = secondary
+          originalInput = inputString
+          translationParty(primary,secondary,inputString)
+        }else{
+          alert("Not all fields are populated\nPlease fill in the form")
+        }//string is empty
       }else{
-        alert("Not all fields are populated\nPlease fill in the form")
-      }//string is empty
+        alert(`translating from ${primary} to ${secondary}? yeah no.`)
+      }//attempting to translate to/from the same language
     }else{
       alert("Languages not selected.\nPlease select a primary and secondary language")
     }//select dropdowns(s) are still at default
@@ -59,54 +53,90 @@ function initialize(){
   })//eventListener for our form
 }//initialize()
 
-function translation(primary,secondary,inputString,iterationCount = 0){
-  //call a function that does the recursion
-  let temp = null
-  fetch(GOOGLE_API_URL, {
-    methods: 'POST'
-    //something else here!
-  })
-  .then(res => res.json())
-  .then(result => function(result){
-    temp = result.value
 
-    //depending on the value of result we might have to
-    //access the string a different way. HALP TIM!!!
-    //we also cannot perform comparisons until the 3rd
-    //iteration since it's every other translation we're
-    //trying to compare i.e. g[0] === g[2], g[1] === g[3], etc.
-
-    //the following assumes to get the string it's result.value
-    iterationArray.push(result.value)
-
-    if(iterationCount >= 3)
-    {
-      //do comparison logic
-      if(iterationArray[iterationCount] === iterationArray[iterationCount-2])
-      {
-        //the strings of a certain language are the same and equilibrium is
-        //attained. call a function that breaks this dreaded loop. also create
-        //a new translation_event to store in our database
-
-      }
-    }
-    updateContentPanel(temp,iterationCount)
-
-    translation(secondary,primary,temp,iterationCount)
-  })//.then(function w/ result)
-
-
-}//beginTranslation()
 
 function updateContentPanel(temp, iterationCount){
   const content = document.getElementById('content-panel')
   const template = `
-    <br><li data-iteration-count="${++iterationCount}">${temp}</li>
+    <br><li data-iteration-count="${iterationArray.length}">${temp}</li>
   `
   content.innerHTML += template
 }//updateContentPanel()
 
 function getStuff(from, to, origin){
-  return fetch(`http://localhost:3000/transfinery/translate?from=${from}&to=${to}&origin=${origin}`)//fetch
+  return  fetch(`http://localhost:3000/transfinery/translate?from=${from}&to=${to}&origin=${origin}`)//fetch
   .then(res => res.json())
 }//getStuff()
+
+function highlightList(){
+  //get DOM elements and change their colors
+}//highlightList()
+
+async function translationParty(from, to, origin){
+  //note async is needed for await to work!!
+
+  //store beginning data (the ones passed in)
+
+  //send fetch with getStuff() and assign to variable
+  //get the string data and shovel into global array
+  //repeat getStuff with from/to switched and the translation
+  // while(keepLooping === true){
+
+    var iterationData = await getStuff(from,to,origin).catch((err) => { console.log(err); });
+
+    let currentIteration = iterationData.text
+    if(iterationArray.length%2 === 0 && from === 'en'){
+      currentIteration = currentIteration.toLowerCase(); // only for eng
+    }
+    console.log("Resumed execution. either i messed up or await isn't working")
+    if(iterationArray.length >= 3){
+      if(currentIteration === iterationArray[iterationArray.length-3])
+      {
+        keepLooping = false
+      }
+    }
+    iterationArray.push(currentIteration)
+    listElement = createListElement(currentIteration, iterationArray.length)
+    const displayArea = document.getElementById('content-panel')
+    displayArea.innerHTML += listElement
+
+    debugger
+
+  // }//keepLooping condition
+
+  //when equillibrium is achieved we need to find the last 3 elements on the page and make them green for confirmation purposes
+
+  highlightList()
+
+  //we also want to write all our global variables as a data obj to the server so it can persist for generations to come >.>
+
+}//translationParty()
+
+function createListElement(str,listID){
+  return `
+    <li data-list-id="${listID}"><h3>${str}</h3></li><br>
+  `
+}//createListElement()
+
+/* things to do
+  recursive function and logic (THE BIG ONE)
+    start with doing the process one step at a time.
+      logic flows as follows:
+      - both languages are selected and a string exists
+      - pass those args as url?arg in fetch to ruby
+      - write (or reuse) the path that does the google.api all
+      - JSON back our data
+      - comparison logic
+        > we don't start comparisons until the 3rd iteration (we need a global counter)
+        > on 3rd iteration we compare the 3rd index with the 0th (always array[x] === array[x-2])
+        > we only ever compare even (and 0) index(s) since doing logic in another language just wont do
+          + IF (array[x] === array[x-2]) ---> break the loop and submit all our data to the ruby backend
+              - fetch request with the data required for our TranslationEvent Object
+                  * Primary Language (eng likely)
+                  * Secondary Language
+                  * original String
+                  ----
+                  * iteration Array []
+          + ELSE run our method with the primaryLanguage and SecondaryLanguage swapped. use the tempString
+            as the new inputString in the function call.
+*/
