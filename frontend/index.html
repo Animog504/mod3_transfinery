@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div align='center'>
-      <form id='transfinery-form'>
-        <label for='input-language'><b>Primary Language</b></label>
-        <div class="custom-select" style="width:400px;" id='primary'>
-          <select>
-            <option value="default">Select Language</option>
-            <option value="en">English</option>
-            <option value="ko">Korean</option>
-            <option value="th">Thai</option>
-            <option value="vi">Vietnamese</option>
-            <option value="zh">Mandarin Chinese</option>
-            <option value="ja">Japanese</option>
-            <option value="iw">Hebrew</option>
-            <option value="fa">Farsi</option>
-            <option value="es">Spanish</option>
-            <option value="it">Italian</option>
-            <option value="fr">French</option>
-            <option value="de">German</option>
-          </select>
-        </div><br>
-        <textarea rows='10' cols='70' id='text-box'></textarea><br><br>
-        <label for='output-language'><b>Secondary Language</b></label>
-        <div class="custom-select" style="width:400px;" id='secondary'>
-          <select>
-            <option value="default">Select Language</option>
-            <option value="ko">Korean</option>
-            <option value="th">Thai</option>
-            <option value="vi">Vietnamese</option>
-            <option value="zh">Mandarin Chinese</option>
-            <option value="ja">Japanese</option>
-            <option value="iw">Hebrew</option>
-            <option value="fa">Farsi</option>
-            <option value="es">Spanish</option>
-            <option value="it">Italian</option>
-            <option value="fr">French</option>
-            <option value="de">German</option>
-            <option value="en">English</option>
-          </select>
-        </div>
-        <input type='submit'>
-      </form>
-    </div>
 
-    <div id='content-panel' align='center'>
-      <!-- stuff goes in here -->
-      <!-- structure
+<head>
+  <meta charset="utf-8">
+
+  <!-- jQuery library -->
+  t
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <title>Transfinery</title>
+</head>
+
+<body>
+  <div align='center'>
+    <form id='transfinery-form'>
+      <label for='input-language'><b>Primary Language</b></label>
+      <div class="custom-select" style="width:400px;" id='primary'>
+        <select>
+          <option value="default">Select Language</option>
+          <option value="en">English</option>
+          <option value="ko">Korean</option>
+          <option value="th">Thai</option>
+          <option value="vi">Vietnamese</option>
+          <option value="zh">Mandarin Chinese</option>
+          <option value="ja">Japanese</option>
+          <option value="iw">Hebrew</option>
+          <option value="fa">Farsi</option>
+          <option value="es">Spanish</option>
+          <option value="it">Italian</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+        </select>
+      </div><br>
+      <textarea rows='10' cols='70' id='text-box'></textarea><br><br>
+      <label for='output-language'><b>Secondary Language</b></label>
+      <div class="custom-select" style="width:400px;" id='secondary'>
+        <select>
+          <option value="default">Select Language</option>
+          <option value="ko">Korean</option>
+          <option value="th">Thai</option>
+          <option value="vi">Vietnamese</option>
+          <option value="zh">Mandarin Chinese</option>
+          <option value="ja">Japanese</option>
+          <option value="iw">Hebrew</option>
+          <option value="fa">Farsi</option>
+          <option value="es">Spanish</option>
+          <option value="it">Italian</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <input type='submit'>
+    </form>
+  </div>
+
+  <div id='content-panel' align='center'>
+    <!-- stuff goes in here -->
+    <!-- structure
       <ul>
         <li>
           translation thing-a-ma-bobber (language 1)
@@ -67,5 +78,6 @@
     <!-- scripts and stuff below! -->
 
     <script src='index.js'></script>
-  </body>
+</body>
+
 </html>
