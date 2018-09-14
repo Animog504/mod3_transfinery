@@ -13,4 +13,20 @@ class TranslationsController < ApplicationController
 
     render json: translation
   end
+  def plsStore
+
+    from = params[:from]
+    to = params[:to]
+    origin = params[:origin]
+    iterations = params[:iterations]
+
+    TranslationEvent.create(from: from,to:to,origin:origin,iterations:iterations)
+
+  end
+
+  private
+
+  def translationParams
+    params.require(:translation_event).permit(:from,:to,:origin,iterations:[])
+  end
 end

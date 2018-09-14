@@ -6,7 +6,8 @@ let secondaryLanguage = ""
 let originalInput = ""
 let iterationArray = []
 let keepLooping = true //for logic later on
-//====================== T
+//======================
+
 document.addEventListener("DOMContentLoaded", () => {
 
   initialize();
@@ -98,11 +99,11 @@ async function translationParty(from, to, origin){
     if(iterationArray.length >= 3){
       console.log(`my iterationArray is ${iterationArray.length}`)
       console.log(`im comparing: ${currentIteration} vs ${iterationArray[iterationArray.length-3]}`)
-      if(currentIteration === iterationArray[iterationArray.length-3] || currentIteration === originalInput || iterationArray.length >= 20)
+      if(currentIteration === iterationArray[iterationArray.length-3] || currentIteration === originalInput || iterationArray.length >= 50)
       {
-        keepLooping = false
-
-        // break out of our recursion
+        keepLooping = false// break out of our recursion
+        setTimeout(saveSession,3000)
+         // save everything!
       }
     }
 
@@ -114,7 +115,7 @@ async function translationParty(from, to, origin){
   }//ifLooping
   // IF YOU'RE HERE YOU'RE DONE WITH THE LOOPZ
   // YOU CAN NOW GRAB ALL THAT GLOBAL VARIABLE GOODNESS AND SHOVE IT INTO RUBY.
-  keepLooping=true
+
 
   // }//keepLooping condition
 
@@ -128,9 +129,33 @@ async function translationParty(from, to, origin){
 
 function createListElement(str,listID){
   return `
-    <li data-list-id="${listID}"><h3>${str}</h3></li>
+    <div data-list-id="${listID}"><h3>${str}</h3></div>
   `
 }//createListElement()
+
+function saveSession(){
+  fetch(TRANSFINERY_URL,{
+    method: 'POST',
+    headers: {
+      'Content-Type':'application/json'
+    },
+    body: JSON.stringify({
+      from: primaryLanguage,
+      to: secondaryLanguage,
+      origin: originalInput,
+      iterations: iterationArray
+    })
+  }).then(alert("Translation Session Saved to Database!"))
+  .then(()=>{
+    //reset all globals
+    primaryLanguage = ""
+    secondaryLanguage = ""
+    originalInput = ""
+    iterationArray = []
+    keepLooping = true
+    console.log("FINISHED!")
+  })
+}//saveSession
 
 /* things to do
   recursive function and logic (THE BIG ONE)

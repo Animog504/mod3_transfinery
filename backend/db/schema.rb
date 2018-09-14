@@ -19,20 +19,10 @@ ActiveRecord::Schema.define(version: 2018_09_11_001955) do
     t.string "from"
     t.string "to"
     t.string "origin"
-    t.string "text"
+    t.string "iterations", array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "translations", force: :cascade do |t|
-    t.string "from"
-    t.string "to"
-    t.string "origin"
-    t.string "text"
-    t.bigint "translation_event_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["translation_event_id"], name: "index_translations_on_translation_event_id"
+    t.index ["iterations"], name: "index_translation_events_on_iterations", using: :gin
   end
 
 end
